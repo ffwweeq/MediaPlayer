@@ -24,5 +24,22 @@ namespace WpfApp6
         {
             InitializeComponent();
         }
+
+        private void btnOpenFile_Click(object sender, RoutedEventArgs e)
+        {
+            var fd = new Microsoft.Win32.OpenFileDialog();
+            fd.Filter = "音訊檔案(*.mp3,*.3gp,*.wma)|*.mp3; *.3gp; *.wma|影片檔案(*.mp4, *.avi, *.mpeg, *.wmv)|*.mp4; *.avi; *.mpeg; *.wmv|所有檔案(*.*)|*.*";
+            fd.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+            fd.ShowDialog();
+            string filename = fd.FileName;
+            if (filename != "")
+            {
+                txtFilePath.Text = filename;
+                Uri u = new Uri(filename);
+                MedShow.Source = u;
+                MedShow.Volume = 0.5f;
+                MedShow.LoadedBehavior = MediaState.Play;
+            }
+        }
     }
 }
