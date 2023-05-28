@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApp6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp6"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FFE9C9C9">
+        <MediaElement HorizontalAlignment="Left" Height="229" Margin="134,88,0,0" VerticalAlignment="Top" Width="555"/>
+        <Button x:Name="btnPlay" Content="播放" HorizontalAlignment="Left" Margin="134,356,0,0" VerticalAlignment="Top" Height="32" Width="67" Background="#FF7CF666"/>
+        <Button x:Name="btnPause" Content="暫停" HorizontalAlignment="Left" Margin="251,356,0,0" VerticalAlignment="Top" Height="32" Width="67" Background="#FF00FF9A"/>
+        <Button x:Name="btnStop" Content="停止" HorizontalAlignment="Left" Margin="380,356,0,0" VerticalAlignment="Top" Height="32" Width="67" Background="#FF0CE9F1"/>
+        <Button x:Name="btnExit" Content="離開" HorizontalAlignment="Left" Margin="494,356,0,0" VerticalAlignment="Top" Height="32" Width="67" Background="#FF02BFFF"/>
+        <Button x:Name="btnOpenFile" Content="開啟檔案" HorizontalAlignment="Left" Margin="625,40,0,0" VerticalAlignment="Top" Height="32" Width="67" Background="#FFFA5959"/>
+        <TextBox x:Name="txtFilePath" HorizontalAlignment="Left" Margin="134,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" Height="32"/>
+
+    </Grid>
+</Window>
