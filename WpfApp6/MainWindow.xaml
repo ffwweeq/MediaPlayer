@@ -7,15 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="#FFE9C9C9">
-        <MediaElement x:Name="MedShow" HorizontalAlignment="Left" Height="229" Margin="134,88,0,0" VerticalAlignment="Top" Width="555" MediaOpened="MedShow_MediaOpened"/>
-        <Button x:Name="btnPlay" Content="播放" HorizontalAlignment="Left" Margin="134,356,0,0" VerticalAlignment="Top" Height="32" Width="67" Background="#FF7CF666" Click="btnPlay_Click"/>
-        <Button x:Name="btnPause" Content="暫停" HorizontalAlignment="Left" Margin="251,356,0,0" VerticalAlignment="Top" Height="32" Width="67" Background="#FF00FF9A" Click="btnPause_Click"/>
-        <Button x:Name="btnStop" Content="停止" HorizontalAlignment="Left" Margin="374,356,0,0" VerticalAlignment="Top" Height="32" Width="67" Background="#FF0CE9F1" Click="btnStop_Click"/>
-        <Button x:Name="btnExit" Content="離開" HorizontalAlignment="Left" Margin="482,356,0,0" VerticalAlignment="Top" Height="32" Width="67" Background="#FF02BFFF" Click="btnExit_Click"/>
-        <Button x:Name="btnOpenFile" Content="開啟檔案" HorizontalAlignment="Left" Margin="625,40,0,0" VerticalAlignment="Top" Height="32" Width="67" Background="#FFFA5959" Click="btnOpenFile_Click"/>
-        <TextBox x:Name="txtFilePath" HorizontalAlignment="Left" Margin="134,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="480" Height="32"/>
-        <Slider x:Name="sliVolume" HorizontalAlignment="Left" Margin="584,364,0,0" VerticalAlignment="Top" Width="108" Height="16" LargeChange="0.05" Maximum="0" TickFrequency="0.01" Value="5" ValueChanged="sliVolume_ValueChanged"/>
-        <Slider x:Name="sliProgress" HorizontalAlignment="Left" Margin="134,324,0,0" VerticalAlignment="Top" Width="558" Background="#FF3E9800" PreviewMouseLeftButtonUp="sliProgress_PreviewMouseLeftButtonUp"/>
+        <MediaElement x:Name="MedShow" HorizontalAlignment="Left" Height="229" Margin="140,71,0,0" VerticalAlignment="Top" Width="555" MediaOpened="MedShow_MediaOpened"/>
+        <Button x:Name="btnPlay" Content="播放" HorizontalAlignment="Left" Margin="140,339,0,0" VerticalAlignment="Top" Height="32" Width="67" Background="#FF7CF666" Click="btnPlay_Click"/>
+        <Button x:Name="btnPause" Content="暫停" HorizontalAlignment="Left" Margin="257,339,0,0" VerticalAlignment="Top" Height="32" Width="67" Background="#FF00FF9A" Click="btnPause_Click"/>
+        <Button x:Name="btnStop" Content="停止" HorizontalAlignment="Left" Margin="380,339,0,0" VerticalAlignment="Top" Height="32" Width="67" Background="#FF0CE9F1" Click="btnStop_Click"/>
+        <Button x:Name="btnExit" Content="離開" HorizontalAlignment="Left" Margin="488,339,0,0" VerticalAlignment="Top" Height="32" Width="67" Background="#FF02BFFF" Click="btnExit_Click"/>
+        <Button x:Name="btnOpenFile" Content="開啟檔案" HorizontalAlignment="Left" Margin="631,23,0,0" VerticalAlignment="Top" Height="32" Width="67" Background="#FFFA5959" Click="btnOpenFile_Click"/>
+        <TextBox x:Name="txtFilePath" HorizontalAlignment="Left" Margin="140,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="480" Height="32"/>
+        <Slider x:Name="sliVolume" HorizontalAlignment="Left" Margin="590,347,0,0" VerticalAlignment="Top" Width="108" Height="16" LargeChange="0.05" Maximum="0" TickFrequency="0.01" Value="5" ValueChanged="sliVolume_ValueChanged"/>
+        <Slider x:Name="sliProgress" HorizontalAlignment="Left" Margin="140,307,0,0" VerticalAlignment="Top" Width="558" Background="#FF3E9800" PreviewMouseLeftButtonUp="sliProgress_PreviewMouseLeftButtonUp"/>
+        <TextBox x:Name="txtTime" HorizontalAlignment="Left" Margin="140,376,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>

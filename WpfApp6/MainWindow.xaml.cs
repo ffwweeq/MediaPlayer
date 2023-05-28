@@ -85,6 +85,8 @@ namespace WpfApp6
         private void timer_tick(object sender, EventArgs e)
         {
             sliProgress.Value = MedShow.Position.TotalMilliseconds;
+
+            txtTime.Text = MedShow.Position.ToString("h'h 'm'm 's's'");
         }
 
         private void sliProgress_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
