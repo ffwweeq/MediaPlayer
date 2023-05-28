@@ -65,7 +65,6 @@ namespace WpfApp6
         private void sliVolume_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             MedShow.Volume = sliVolume.Value;
-            MedShow.Volume = sliVolume.Value;
         }
     }
 }
