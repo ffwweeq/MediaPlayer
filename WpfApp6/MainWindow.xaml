@@ -14,6 +14,7 @@
         <Button x:Name="btnExit" Content="離開" HorizontalAlignment="Left" Margin="494,356,0,0" VerticalAlignment="Top" Height="32" Width="67" Background="#FF02BFFF" Click="btnExit_Click"/>
         <Button x:Name="btnOpenFile" Content="開啟檔案" HorizontalAlignment="Left" Margin="625,40,0,0" VerticalAlignment="Top" Height="32" Width="67" Background="#FFFA5959" Click="btnOpenFile_Click"/>
         <TextBox x:Name="txtFilePath" HorizontalAlignment="Left" Margin="134,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="456" Height="32"/>
+        <Slider x:Name="sliVolume" HorizontalAlignment="Left" Margin="598,356,0,0" VerticalAlignment="Top" Width="120" Height="32" LargeChange="0.05" Maximum="0" TickFrequency="0.01" Value="5" ValueChanged="sliVolume_ValueChanged"/>
 
     </Grid>
 </Window>
