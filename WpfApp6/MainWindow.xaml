@@ -15,7 +15,7 @@
         <Button x:Name="btnOpenFile" Content="開啟檔案" HorizontalAlignment="Left" Margin="625,40,0,0" VerticalAlignment="Top" Height="32" Width="67" Background="#FFFA5959" Click="btnOpenFile_Click"/>
         <TextBox x:Name="txtFilePath" HorizontalAlignment="Left" Margin="134,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="480" Height="32"/>
         <Slider x:Name="sliVolume" HorizontalAlignment="Left" Margin="584,364,0,0" VerticalAlignment="Top" Width="108" Height="16" LargeChange="0.05" Maximum="0" TickFrequency="0.01" Value="5" ValueChanged="sliVolume_ValueChanged"/>
-        <Slider x:Name="sliProgress" HorizontalAlignment="Left" Margin="134,324,0,0" VerticalAlignment="Top" Width="558" Background="#FF3E9800"/>
+        <Slider x:Name="sliProgress" HorizontalAlignment="Left" Margin="134,324,0,0" VerticalAlignment="Top" Width="558" Background="#FF3E9800" PreviewMouseLeftButtonUp="sliProgress_PreviewMouseLeftButtonUp"/>
 
     </Grid>
 </Window>
