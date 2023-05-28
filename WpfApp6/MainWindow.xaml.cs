@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace WpfApp6
 {
@@ -65,6 +66,25 @@ namespace WpfApp6
         private void sliVolume_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             MedShow.Volume = sliVolume.Value;
+        }
+
+
+        TimeSpan TimePosition;
+        DispatcherTimer timer = null;
+        private void MedShow_MediaOpened(object sender, RoutedEventArgs e)
+        {
+            TimePosition = MedShow.NaturalDuration.TimeSpan;
+            sliProgress.Minimum = 0;
+            sliProgress.Maximum = TimePosition.TotalMilliseconds; 
+
+            timer = new DispatcherTimer();
+            timer.Interval = TimeSpan.FromSeconds(1); 
+            timer.Tick += new EventHandler(timer_tick); 
+            timer.Start(); 
+        }
+        private void timer_tick(object sender, EventArgs e)
+        {
+            sliProgress.Value = MedShow.Position.TotalMilliseconds;
         }
     }
 }
