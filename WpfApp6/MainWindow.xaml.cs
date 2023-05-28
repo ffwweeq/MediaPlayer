@@ -56,5 +56,10 @@ namespace WpfApp6
         {
             MedShow.LoadedBehavior = MediaState.Stop;
         }
+
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }
