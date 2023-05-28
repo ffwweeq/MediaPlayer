@@ -41,5 +41,20 @@ namespace WpfApp6
                 MedShow.LoadedBehavior = MediaState.Play;
             }
         }
+
+        private void btnPlay_Click(object sender, RoutedEventArgs e)
+        {
+            MedShow.LoadedBehavior = MediaState.Play;
+        }
+
+        private void btnPause_Click(object sender, RoutedEventArgs e)
+        {
+            MedShow.LoadedBehavior = MediaState.Pause;
+        }
+
+        private void btnStop_Click(object sender, RoutedEventArgs e)
+        {
+            MedShow.LoadedBehavior = MediaState.Stop;
+        }
     }
 }
